@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música OutEnguit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma Música OutEnguit</h1>
+    </header>
+
+    <section class="upload-form">
+        <h2>Envie sua Música para o YouTube</h2>
+        <form id="uploadForm">
+            <label for="musicFile">Escolha a música (MP3):</label>
+            <input type="file" id="musicFile" accept="audio/mp3" required><br><br>
+
+            <label for="coverImage">Escolha a capa (Imagem):</label>
+            <input type="file" id="coverImage" accept="image/*" required><br><br>
+
+            <label for="title">Título da Música:</label>
+            <input type="text" id="title" required><br><br>
+
+            <label for="artist">Artista(s):</label>
+            <input type="text" id="artist" required><br><br>
+
+            <label for="album">Álbum/EP (se houver):</label>
+            <input type="text" id="album"><br><br>
+
+            <label for="isSingle">É um Single?</label>
+            <select id="isSingle">
+                <option value="false">Não</option>
+                <option value="true">Sim</option>
+            </select><br><br>
+
+            <button type="submit">Enviar para o YouTube</button>
+        </form>
+    </section>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
